@@ -244,10 +244,10 @@ typings/
 # Visual Studio 6 build log
 *.plg
 
-# Visual Studio 6 workspace options file
+# Visual Studio 6 workspace option file
 *.opt
 
-# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc)
 *.vbw
 
 # Visual Studio LightSwitch build output
