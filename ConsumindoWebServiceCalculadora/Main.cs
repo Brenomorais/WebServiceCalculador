@@ -32,7 +32,17 @@ namespace ConsumindoWebServiceCalculadora
                     break;
 
                 case 1:
-                    operacao = localhost.OperacoesBasicas.Divisao;
+                    if (valorB == 0)
+                    {
+                        clearField();
+                        MessageBox.Show("Não é possivel dividir por zero!", "Atenção",
+                            MessageBoxButtons.OK, 
+                            MessageBoxIcon.Information, 
+                            MessageBoxDefaultButton.Button1);
+                       
+                    }
+                    else
+                        operacao = localhost.OperacoesBasicas.Divisao;
                     break;
 
                 case 2:
@@ -54,11 +64,16 @@ namespace ConsumindoWebServiceCalculadora
 
         private void button2_Click(object sender, EventArgs e)
         {
+            clearField();
+
+        }
+
+        private void clearField()
+        {
             tbResultado.Text = "";
             tbValorA.Text = "";
             tbValorB.Text = "";
             cbOperacao.Text = "";
-
         }
     }
 }
